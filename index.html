@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+    <div class="content">
+        <main>
+            <!-- Search Section: Allows users to search for a city -->
+            <section id="search-section">
+                <form id="search-form">
+                    <label id="label-color" for="city-input">City:</label>
+                    <input type="text" id="city-input" required>
+                    <button type="submit">Search</button>
+                </form>
+                <div id="search-history">
+                    <h2>Search History</h2>
+                    <ul id="history-list"></ul>
+                </div>
+            </section>
+
+            <!-- Current Weather Section: Displays the current weather information for a city -->
+            <section id="current-weather">
+                <h2 class="weather-color">Current Weather</h2>
+                <div id="current-weather-info">
+                    <!-- The current weather information will be dynamically displayed here -->
+                </div>
+            </section>
+
+            <!-- 5 Day Forecast Section: Displays the 5-Day forecast for a city -->
+            <section id="forecast">
+                <h2 class="forecast-color">5-Day Forecast</h2>
+                <div id="forecast-info">
+                    <!-- The 5-Day forecast information will be dynamically displayed here -->
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+
+</html>
